@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mobile Stress Recovery">
+  <rect width="64" height="64" fill="#f4f1ea"/>
+  <circle cx="28" cy="32" r="14" fill="none" stroke="#3e4a3c" stroke-width="2"/>
+  <circle cx="38" cy="32" r="14" fill="none" stroke="#5d6d78" stroke-width="2"/>
+</svg>
