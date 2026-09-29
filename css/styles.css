@@ -109,6 +109,7 @@ p:last-child {
 }
 
 #benefits,
+#roi,
 #how-it-works,
 #offerings,
 #contact {
@@ -336,6 +337,64 @@ p:last-child {
   color: var(--ink-soft);
 }
 
+.roi {
+  background: var(--white);
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+.stat-card {
+  background: var(--cream);
+  padding: 2.2rem 1.7rem 2rem;
+}
+
+.stat-figure {
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.1rem;
+  color: var(--sage-deep);
+}
+
+.stat-figure span {
+  font-size: 0.45em;
+  letter-spacing: 0;
+  color: var(--slate);
+}
+
+.stat-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.65rem;
+}
+
+.stat-card p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.15rem;
+}
+
+.compare-grid article {
+  padding: 2.4rem 2rem 2.2rem;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.compare-grid p:not(.tier-label) {
+  color: var(--ink-soft);
+}
+
 .proof {
   background: var(--sage-deep);
 }
@@ -471,6 +530,60 @@ p:last-child {
   font-size: 0.98rem;
 }
 
+.quotes {
+  background: var(--cream);
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.15rem;
+}
+
+.quote-card {
+  margin: 0;
+  padding: 2.4rem 2.1rem 2.1rem;
+  background: var(--white);
+  border: 1px solid transparent;
+}
+
+.quote-card p {
+  font-family: var(--font-serif);
+  font-size: 1.28rem;
+  line-height: 1.45;
+  font-style: italic;
+}
+
+.quote-card footer {
+  margin-top: 1.4rem;
+}
+
+.quote-card cite {
+  display: block;
+  font-style: normal;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.quote-card span {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.quote-card.featured-quote {
+  background: var(--sage-deep);
+  color: var(--white);
+}
+
+.quote-card.featured-quote span {
+  color: #c9d4c6;
+}
+
 .contact {
   background: var(--white);
 }
@@ -594,18 +707,45 @@ p:last-child {
   color: var(--white);
 }
 
+.footer-pitch {
+  max-width: 32rem;
+}
+
+.footer-cta {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.footer-cta:hover,
+.footer-cta:focus-visible {
+  text-decoration: underline;
+}
+
 .disclaimer,
 .copyright {
   font-size: 0.85rem;
   line-height: 1.6;
 }
 
+@media (max-width: 1100px) {
+  .stat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 900px) {
   .intro-grid,
   .benefit-grid,
+  .stat-grid,
+  .compare-grid,
   .timeline,
   .tier-grid,
   .founder-grid,
+  .quote-grid,
   .contact-grid,
   .field-row {
     grid-template-columns: 1fr;
@@ -666,7 +806,9 @@ p:last-child {
   }
 
   .benefit-card,
-  .tier-card {
+  .tier-card,
+  .stat-card,
+  .quote-card {
     min-height: 0;
     padding: 2rem 1.5rem;
   }
