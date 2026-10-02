@@ -109,10 +109,17 @@ p:last-child {
 }
 
 #benefits,
-#roi,
+#vetted-standards,
+#roi-metrics,
+#operational-matrix,
+#executive-pitch,
 #how-it-works,
+#reset-process,
 #offerings,
-#contact {
+#testimonials,
+#contact,
+#intro-heading,
+#founder-heading {
   scroll-margin-top: var(--header-h);
 }
 
@@ -154,6 +161,32 @@ p:last-child {
 
 .btn:active {
   transform: translateY(1px);
+}
+
+.btn-primary,
+.btn-secondary {
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary::after,
+.btn-secondary::after {
+  content: "";
+  position: absolute;
+  bottom: 0.55rem;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  pointer-events: none;
+}
+
+.btn-primary:hover::after,
+.btn-secondary:hover::after {
+  width: calc(100% - 3.7rem);
 }
 
 .site-header {
@@ -270,11 +303,32 @@ p:last-child {
   color: #d7ddd4;
 }
 
+.hero-highlight {
+  font-size: 1.2rem;
+  color: var(--white);
+  max-width: 36rem;
+  margin-bottom: 0;
+}
+
+.hero hr {
+  width: 4.5rem;
+  border: 0;
+  border-top: 1px solid rgba(251, 250, 246, 0.45);
+  margin: 1.35rem 0;
+}
+
 .hero .lede {
   font-size: 1.12rem;
   color: rgba(251, 250, 246, 0.88);
-  max-width: 34rem;
-  margin-bottom: 2.25rem;
+  max-width: 36rem;
+  margin-bottom: 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2.25rem;
 }
 
 .hero .btn {
@@ -288,6 +342,129 @@ p:last-child {
   background: var(--cream);
   border-color: var(--cream);
   color: var(--ink);
+}
+
+.hero .btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border-color: rgba(251, 250, 246, 0.85);
+}
+
+.hero .btn-secondary:hover,
+.hero .btn-secondary:focus-visible {
+  background: var(--white);
+  border-color: var(--white);
+  color: var(--ink);
+}
+
+.vetted {
+  background: var(--cream);
+}
+
+.vetted-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.15rem;
+}
+
+.vetted-card {
+  background: var(--white);
+  padding: 2.4rem 2rem 2.2rem;
+  border: 1px solid var(--line);
+}
+
+.vetted-card p {
+  color: var(--ink-soft);
+}
+
+.metric-list {
+  list-style: none;
+  margin: 0 0 3.5rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.15rem;
+}
+
+.metric-list li {
+  background: var(--cream);
+  padding: 2rem 1.7rem 1.8rem;
+  color: var(--ink-soft);
+}
+
+.metric-list strong {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: var(--sage-deep);
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.yield-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.yield-table caption {
+  caption-side: top;
+  text-align: left;
+  font-family: var(--font-serif);
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 1.15rem;
+}
+
+.yield-table th,
+.yield-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 1.35rem 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.yield-table th {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
+.yield-table td {
+  color: var(--ink-soft);
+  width: 33.33%;
+}
+
+.yield-table td strong {
+  color: var(--ink);
+}
+
+#operational-matrix {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 max(1.5rem, calc((100% - var(--max)) / 2)) 7.5rem;
+  background: var(--white);
+  overflow-x: auto;
+}
+
+.roi .section-inner {
+  padding-bottom: 2.5rem;
+}
+
+#operational-matrix h2 {
+  white-space: nowrap;
+  font-size: clamp(1.05rem, 3.15vw, 2.6rem);
+  line-height: 1.15;
+  margin-bottom: 0;
 }
 
 .intro {
@@ -310,6 +487,38 @@ p:last-child {
   max-width: 40rem;
   color: var(--ink-soft);
   font-size: 1.12rem;
+}
+
+.intro p strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.protocol-points {
+  list-style: none;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  max-width: 40rem;
+}
+
+.protocol-points li {
+  margin: 0;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+.protocol-points strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .benefits {
@@ -335,6 +544,36 @@ p:last-child {
 
 .benefit-card p {
   color: var(--ink-soft);
+}
+
+.executive-pitch {
+  background: var(--cream-deep);
+}
+
+.pitch-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.15rem;
+}
+
+.pitch-list li {
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 2rem 1.7rem 1.8rem;
+  color: var(--ink-soft);
+}
+
+.pitch-list strong {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .roi {
@@ -456,8 +695,54 @@ p:last-child {
   object-position: 50% 55%;
 }
 
+#reset-process {
+  background: var(--white);
+  padding: 7.5rem max(1.5rem, calc((100% - var(--max)) / 2));
+}
+
+#reset-process p {
+  max-width: 44rem;
+  color: var(--ink);
+}
+
+#reset-process ul {
+  margin: 1.75rem 0 0;
+  padding-left: 1.35rem;
+  max-width: 44rem;
+  display: grid;
+  gap: 1.15rem;
+}
+
+#reset-process li {
+  color: var(--ink-soft);
+  padding-left: 0.35rem;
+}
+
+#reset-process strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .offerings {
   background: var(--cream);
+}
+
+.offering-points {
+  margin: 0 0 2.25rem;
+  padding-left: 1.35rem;
+  max-width: 44rem;
+  display: grid;
+  gap: 1.15rem;
+}
+
+.offering-points li {
+  color: var(--ink-soft);
+  padding-left: 0.35rem;
+}
+
+.offering-points strong {
+  color: var(--ink);
+  font-weight: 500;
 }
 
 .tier-grid {
@@ -540,10 +825,42 @@ p:last-child {
   line-height: 1.25;
 }
 
+.founder .founder-credit {
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
 .founder-credit span {
   font-family: var(--font-sans);
   font-size: 0.9rem;
   font-weight: 300;
+  color: var(--ink-soft);
+}
+
+.founder-quote {
+  margin: 0 0 1.5rem;
+  padding: 0.15rem 0 0.15rem 1.15rem;
+  border-left: 1px solid var(--line);
+  max-width: 38rem;
+}
+
+.founder-quote p {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.28rem;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.founder-quote cite {
+  display: block;
+  margin-top: 0.85rem;
+  font-style: normal;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
   color: var(--ink-soft);
 }
 
@@ -606,12 +923,13 @@ p:last-child {
 
 .quote-card cite {
   display: block;
+  margin-top: 1.4rem;
   font-style: normal;
   font-family: var(--font-sans);
   font-size: 0.82rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-transform: none;
 }
 
 .quote-card span {
@@ -660,9 +978,34 @@ p:last-child {
   text-decoration: underline;
 }
 
+.contact-form-panel {
+  display: grid;
+  gap: 1.35rem;
+  align-content: start;
+}
+
 .intake-form {
   display: grid;
   gap: 1.15rem;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.direct-email {
+  color: var(--ink-soft);
+}
+
+.direct-email a {
+  color: var(--sage-deep);
+  text-decoration: none;
+}
+
+.direct-email a:hover,
+.direct-email a:focus-visible {
+  text-decoration: underline;
 }
 
 .field-row {
@@ -813,6 +1156,9 @@ p:last-child {
 @media (max-width: 900px) {
   .intro-grid,
   .benefit-grid,
+  .vetted-grid,
+  .metric-list,
+  .pitch-list,
   .stat-grid,
   .compare-grid,
   .timeline,
@@ -830,6 +1176,47 @@ p:last-child {
 
   .contact-copy {
     position: static;
+  }
+
+  .yield-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .yield-table,
+  .yield-table tbody,
+  .yield-table tr,
+  .yield-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .yield-table tr {
+    border-top: 1px solid var(--line);
+    padding-top: 1.25rem;
+  }
+
+  .yield-table td {
+    border-top: 0;
+    padding: 0 0 1.25rem;
+  }
+
+  .yield-table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--slate);
   }
 
   .nav-toggle {
