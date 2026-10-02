@@ -1279,3 +1279,6 @@ p:last-child {
     scroll-behavior: auto;
   }
 }
+#executive-pitch-heading {
+  white-space: nowrap !important;
+}
