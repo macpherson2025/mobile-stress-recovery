@@ -1282,6 +1282,3 @@ p:last-child {
 #executive-pitch-heading {
   white-space: nowrap !important;
 }
-.policy {
-  font-style: italic;
-}

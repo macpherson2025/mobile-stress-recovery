@@ -400,10 +400,9 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-
         <p class="footer-brand">Mobile Stress Recovery LLC</p>
-        <p class="disclaimer">This is for informational purposes only. For medical advice or diagnosis, consult a professional.</p
-        <p class="copyright">© 2026 Mobile Stress Recovery LLC | All rights reserved</p>
+        <p class="disclaimer">This is for informational purposes only. For medical advice or diagnosis, consult a professional.</p>
+        <p class="copyright">© 2026 Mobile Stress Recovery LLC | All rights reserved.</p>
       </div>
     </footer>
 
