@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --cream: #f4f1ea;
   --cream-deep: #e8e2d6;
@@ -1284,4 +1288,33 @@ p:last-child {
 }
 .policy {
   font-style: italic;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--ink);
+  color: var(--white);
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  border: 1px solid #c9cbc4;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+  background: #c9cbc4;
+  color: var(--ink);
+  transform: translateY(-4px);
+  cursor: pointer;
+  border: none;
+  outline: none;
 }

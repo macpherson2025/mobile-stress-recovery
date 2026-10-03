@@ -88,4 +88,8 @@
           "Opening your email client so we still receive the request.";
       });
   });
+
+  document.querySelector(".back-to-top").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 })();
