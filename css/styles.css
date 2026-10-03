@@ -812,6 +812,17 @@ p:last-child {
   max-width: 38rem;
 }
 
+.founder p a {
+  color: var(--sage-deep);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.founder p a:hover,
+.founder p a:focus-visible {
+  color: var(--ink);
+}
+
 .founder-identity {
   display: flex;
   flex-wrap: wrap;
