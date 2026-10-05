@@ -471,6 +471,32 @@ p:last-child {
   margin-bottom: 0;
 }
 
+.yield-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.yield-matrix thead tr {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.yield-matrix th {
+  padding: 12px;
+  text-align: left;
+}
+
+.yield-matrix tbody tr {
+  border-bottom: 1px solid #dee2e6;
+  vertical-align: top;
+}
+
+.yield-matrix td {
+  padding: 12px;
+  line-height: 1.5;
+}
+
 .intro {
   background: var(--white);
 }
@@ -523,6 +549,13 @@ p:last-child {
   font-size: 1.45rem;
   font-weight: 500;
   line-height: 1.2;
+}
+
+.protocol-points a,
+.metric-list a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
 .benefits {
@@ -850,6 +883,13 @@ p:last-child {
   font-size: 0.9rem;
   font-weight: 300;
   color: var(--ink-soft);
+}
+
+.founder-credit a {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
 }
 
 .founder-quote {

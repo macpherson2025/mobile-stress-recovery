@@ -36,6 +36,8 @@
       return;
     }
 
+    const contactEmail = "lea&#64;mobilestressrecovery.com".replace("&#64;", "@");
+
     const payload = {
       name: form.name.value.trim(),
       title: form.title.value.trim(),
@@ -48,7 +50,7 @@
 
     status.textContent = "Sending…";
 
-    fetch("https://formsubmit.co/ajax/lea@mobilestressrecovery.com", {
+    fetch("https://formsubmit.co/ajax/" + contactEmail, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -79,7 +81,7 @@
         ].join("\n");
 
         window.location.href =
-          "mailto:lea@mobilestressrecovery.com?subject=" +
+          "mailto:" + contactEmail + "?subject=" +
           encodeURIComponent("Corporate proposal request") +
           "&body=" +
           encodeURIComponent(body);
