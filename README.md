@@ -11,15 +11,10 @@ Unlike traditional website builders (like GoDaddy or Squarespace) that lock your
 * **Blazing Fast Performance:** Cloudflare hosts your site across a global network of hundreds of data centers simultaneously. The site loads near-instantly for visitors, drastically improving user experience and Google search rankings.
 * **Automated Security:** There are no servers, databases, or plugins to manually patch or update. The website is inherently protected against traditional web database vulnerabilities and includes a fully automated, free SSL security certificate.
 * **Enterprise-Grade Backup History:** Every single change made to this website is securely logged in a permanent history trail right here on GitHub. If an error is introduced in the future, the entire live website can be rolled back to a previous working version with a single click.
+* **At Cost Domains:** When it's time for Domain renewal Cloudflare renews domains at registry cost wtih zero markup.
 
 ## 🛠️ How to Maintain Locally
 1. Clone this repository to your local machine.
 2. Make your edits to `index.html` or `css/styles.css`.
 3. Pushes to the `main` branch will automatically trigger a fresh production build and deploy live via Cloudflare Pages.
-
-
-
-
-
-how to run it locally - Open index.html in a local browser
-deployment pipeline - Pushes to main automatically deploy to Cloudflare Pages
+ 
