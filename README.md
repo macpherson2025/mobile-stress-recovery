@@ -16,8 +16,8 @@ Unlike traditional website builders (like GoDaddy or Squarespace) that lock your
 * **DDoS Protection::** Deploys mitigation rules to block bad automated bots or malicious traffic from disrupting the user interface.
 
 
-## 🛠️ How to Maintain Locally
-1. Clone this repository to your local machine.
-2. Make your edits to `index.html` or `css/styles.css`.
-3. Pushes to the `main` branch will automatically trigger a fresh production build and deploy live via Cloudflare Pages.
+## 🛠️ How the engine runs
+1. Updates and changes are performed in a local project folder
+2. Edits are performed with Open Source Developer App VSCodium (https://vscodium.com/)
+3. Pushes to the `main` branch automatically trigger a fresh production build and deploy live via Cloudflare Pages. (https://www.cloudflare.com/products/pages/)
  

@@ -896,6 +896,8 @@ p:last-child {
 }
 
 .founder-credit a {
+  justify-self: start;
+  margin-top: 0.35rem;
   font-family: var(--font-sans);
   font-size: 0.82rem;
   font-weight: 500;
