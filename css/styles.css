@@ -2,27 +2,9 @@
 @font-face {
   font-family: 'Cormorant Garamond';
   font-style: normal;
-  font-weight: 400;
-  font-display: swap; /* Satisfies mobile performance and keeps FCP fast */
+  font-weight: 300 700; /* Directs the browser to use this single file for all headline weights */
+  font-display: swap; 
   src: url('cormorant-garamond-v21-latin-regular.woff2') format('woff2');
-}
-
-/* cormorant-garamond-500 - latin */
-@font-face {
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('cormorant-garamond-v21-latin-500.woff2') format('woff2');
-}
-
-/* cormorant-garamond-700 - latin */
-@font-face {
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('cormorant-garamond-v21-latin-700.woff2') format('woff2');
 }
 
 html {
