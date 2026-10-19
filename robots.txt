@@ -3,4 +3,4 @@ Allow: /
 
 Sitemap: https://www.mobilestressrecovery.com/sitemap.xml
 
-Agent-map: https://www.mobilestressrecovery.com/.well-known/ard.json
+# Agent-map: https://www.mobilestressrecovery.com/.well-known/ard.json
