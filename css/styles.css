@@ -302,9 +302,8 @@ p:last-child {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(42, 45, 40, 0.18) 0%, rgba(42, 45, 40, 0.72) 78%),
-    linear-gradient(90deg, rgba(62, 74, 60, 0.35), transparent 55%);
+  /* 40% black tint over the hero photo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 
 .hero-content {
