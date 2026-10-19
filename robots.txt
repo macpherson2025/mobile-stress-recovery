@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.mobilestressrecovery.com/sitemap.xml
+
+Agentmap: https://www.mobilestressrecovery.com/.well-known/ard.json

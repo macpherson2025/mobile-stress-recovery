@@ -1,0 +1,7 @@
+/.well-known/ard.json
+  Content-Type: application/json
+  Access-Control-Allow-Origin: *
+
+/.well-known/ai-catalog.json
+  Content-Type: application/ai-catalog+json
+  Access-Control-Allow-Origin: *

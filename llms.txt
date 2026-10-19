@@ -1,0 +1,19 @@
+# Mobile Stress Recovery
+
+> Mobile Stress Recovery LLC brings 25–35 minute on-site nervous system resets to Front Range workplaces. Groups of up to 10 employees sit fully clothed in a conference room for auricular acupuncture using the NADA protocol, aimed at vagus nerve stimulation, cortisol regulation, and heart-rate variability.
+
+The practice is based in Denver, Colorado, and serves the Denver Metro Area and the Front Range on weekdays from 8:00 to 17:00. This file is a guide to the public marketing site. Page content is informational and is not medical advice.
+
+## Site
+
+- [Homepage](https://www.mobilestressrecovery.com/): Corporate overview, protocol, offerings, and how to request a proposal
+- [Results](https://www.mobilestressrecovery.com/#roi-metrics): Return, participation, and capacity figures
+- [Offerings](https://www.mobilestressrecovery.com/#offerings): Event block, half-day department block, and monthly retainer
+- [Testimonials](https://www.mobilestressrecovery.com/#testimonials): Reports from municipal and corporate participants
+- [Contact](https://www.mobilestressrecovery.com/#contact): Request a corporate proposal or leadership pilot
+- [Sitemap](https://www.mobilestressrecovery.com/sitemap.xml): Indexable URLs for the site
+
+## Optional
+
+- [NADA protocol](https://acudetox.com/protocol/): Ear acupuncture protocol used in sessions
+- [LinkedIn](https://www.linkedin.com/in/lea-ann-rowley-2164911b5/): Lea Ann Rowley, owner and certified acupuncturist
